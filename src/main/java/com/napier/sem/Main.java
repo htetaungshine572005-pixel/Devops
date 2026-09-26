@@ -12,7 +12,7 @@ public class Main {
         Connection conn = null;
         try {
             conn = DriverManager.getConnection("jdbc:mysql://localhost:3307/test_db?useSSL=false&allowPublicKeyRetrieval=true", "testuser", "testtest");
-            IO.println("Connected to the Database Successfully");
+            System.out.println("Connected to the Database Successfully");
         } catch (Exception e) {
             e.printStackTrace();
         }
