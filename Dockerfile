@@ -1,5 +1,5 @@
 FROM eclipse-temurin:25
 LABEL authors="Htet Aung Shine"
-COPY ./target/classes/com /tmp/com
+COPY ./target/Devops-0.1-alpha-2.jar /tmp
 WORKDIR /tmp
-ENTRYPOINT ["java", "com.napier.sem.App"]
+ENTRYPOINT ["java", "-jar", "Devops-0.1-alpha-2.jar"]
